@@ -1,0 +1,47 @@
+<html>
+
+<head>
+    <title>Kodumun Editoru</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        body {
+            padding: 25px;
+            background-color: white;
+            color: black;
+            font-size: 25px;
+        }
+
+        .dark-mode {
+            background-color: violet;
+            color: white;
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <textarea id="html" placeholder="HTML"></textarea>
+    <textarea id="css" placeholder="CSS"></textarea>
+    <textarea id="js" placeholder="JavaScript"></textarea>
+    <iframe id="code"></iframe>
+    <script type="text/javascript" src="app.js"></script>
+    <button onclick="myFunction()">Renk butonu</button>
+
+
+
+    <script>
+        function myFunction() {
+            var element = document.body;
+            element.classList.toggle("dark-mode");
+        }
+    </script>
+
+
+
+</body>
+
+</html>
